@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop Web - HTML</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home">
+            <div class="me">
+                <img width="560" height="auto" src="./img/danial-ricaros-785707-unsplash-1520x1013.jpg" alt="me">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non quia dicta fuga consequuntur iusto
+                ea impedit tenetur qui itaque, explicabo eum voluptas sequi laborum porro recusandae ducimus asperiores!
+                Natus.
+                Laudantium quisquam, officia accusantium sed aspernatur nihil eligendi facilis debitis a iusto nulla
+                suscipit doloribus natus repellat laborum quam quod esse cum dolorem exercitationem sint nemo
+                repellendus facere. Sequi, quos?
+                Culpa minus, neque consequatur voluptates at ipsa dolore beatae esse corrupti laudantium voluptas nihil
+                ut in, similique unde nostrum! Quas maiores odit quos hic modi molestias quidem! Est, ipsum ipsa.
+                Nemo earum suscipit deleniti dignissimos. Atque, accusamus? Dolores repellat corrupti autem labore
+                fugiat nisi veritatis corporis quasi aut itaque similique laborum aspernatur, qui eveniet doloremque rem
+                quas. Harum, cumque esse?
+                Nisi cum, repellat dicta dolorum in id praesentium ad, aliquam esse mollitia unde asperiores? Quaerat
+                natus officiis alias delectus vero, aspernatur fuga eum porro laudantium, nostrum expedita veniam
+                corrupti sunt.
+                Ipsa, officia voluptatibus excepturi qui cupiditate asperiores molestias ullam, illo rem explicabo iure!
+                Error dolorem veniam praesentium, deleniti ex facere eaque accusantium, explicabo obcaecati laudantium
+                necessitatibus distinctio nisi, reiciendis maiores.
+            </p>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <ul>
+                <li>Name: John</li>
+                <li>Last name: Doe </li>
+                <li>
+                    Email: <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a>
+                </li>
+                <li>Academic Background:
+                    <ol>
+                        <li>GoMyCode Certificat - 2021</li>
+                        <li>Civil Engineering Master - 2018</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z2jgLckP8O8" frameborder="20"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <form>
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" />
+                <br>
+                <p>Please choose your gender:</p>
+                <label for="male">Male:</label>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="female">Female:</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="alien">Alien:</label>
+                <input type="radio" id="alien" name="gender" value="Alien" />
+                <label for="non-binary">Non-binary:</label>
+                <input type="radio" id="non-binary" name="gender" value="Non binary" />
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" />
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone">
+                <br>
+                <label for="province">Wilaya:</label>
+                <select id="province" name="province" placeholder="Enter province">
+
+                    <option value="alger">Oran</option>
+
+                    <optgroup label="Wilayas du nord">
+                        <option selected value="alger">Alger</option>
+                        <option value="blida">Blida</option>
+                        <option value="annaba">Annaba</option>
+                    </optgroup>
+                    <optgroup label="Wilayas du sud">
+                        <option value="biskra">Biskra</option>
+                        <option value="ghardaia">Ghardaia</option>
+                        <option value="timimoun">Timimoun</option>
+                    </optgroup>
+
+                </select>
+                <br>
+                <label for="message">Message</label>
+                <textarea placeholder="Enter message" rows="10"></textarea>
+                <br>
+                <label for="document">Document:</label>
+                <input type="file" id="document" name="document" />
+                <br>
+                <p for="source">From where did you hear from us ?????:</p>
+                <label for="internet">Internet</label>
+                <input type="checkbox" id="internet" name="source" value="internet" />
+                <label for="social-media">Social media</label>
+                <input type="checkbox" id="social-media" name="source" value="social media" />
+
+                <br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
